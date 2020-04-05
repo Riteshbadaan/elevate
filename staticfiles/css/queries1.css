@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1200px) {
+    .row { padding: 0 2%; }
+}
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    h2 { margin-top: 40px; }
+    .event-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    .row { padding: 0 4%; }
+    .main-nav1 {
+        float: left;
+        margin-top: 30px;
+        padding: 10px 0;
+        display: none;
+    }
+    .spons h3 {
+        font-size: 150%;
+    }
+    .main-nav1 li { display: block; }
+    .navbar{
+        display: block;
+        border: 0;
+    }
+    .sticky .main-nav1 {
+        margin-top: 0px;
+    }
+    .sticky .navbar{
+        padding: 10px 0;
+    }
+    .sticky .mobile-nav-icon {
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    h1 { font-size: 350%; }
+    h2 { font-size: 300%; }
+    .event-text {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .mobile-nav-icon { display: inline-block; }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo { height: 100px; }
+    .pict { margin-top: 100px; }
+
+    .btn-ghost {
+        margin-top: 10px;
+    }
+    .col {
+        margin: 0 0 4% 0;
+        width: 100%;
+    }
+    .btn {
+        width: 250px;
+    }
+    h1 { font-size: 250%; }
+    h2 {
+        font-size: 200%;
+        margin-top: 50px;
+    }
+    .main-nav1 {
+        margin-left: 70px;
+        margin-top: 20px;
+        z-index: 9999;
+    }
+    .sticky .main-nav1 {
+        margin-left: 120px;
+    }
+    h2:after {
+        margin-top: 20px;
+    }
+}

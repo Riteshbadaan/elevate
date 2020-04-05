@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="{% static "css/registration_form.css" %}">
+        <link rel="stylesheet" href="{% static "css/grid.css" %}">
+        <script type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+    </script>
+    <title>Elevate '20</title>
+    </head>
+    <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+        <div id="particles-js"></div>
+        <section>
+                    <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <h2>Team details</h2>
+            <form action="" method="post" class="STYLE-NAME">
+                <label>
+                    <span>Type :</span><select name="selection">
+                    <option value="Company">Company</option>
+                    <option value="College" selected>College</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Institute Name :</span>
+                    <input id="name" type="text" name="inst-name" placeholder="Full Name" required/>
+                </label>
+
+                <p class="playername" style="text-align: center; font-weight: bold; font-size: larger;">Player details</p><br>
+
+                <label>
+                    <span>Player-1 Name :</span>
+                    <input id="name" type="text" name="name1" placeholder="Name" required />
+                </label>
+
+
+                <label>
+                    <span>Player-1 Email :</span>
+                    <input id="email" type="email" name="email1" placeholder="Email Address" required />
+                </label>
+
+
+                <label>
+                    <span>Player-1 Phone :</span>
+                    <input id="phone" type="tel" name="phone1" placeholder="Phone" required maxlength="10"/>
+                </label>
+
+                <label>
+                    <span>Player-2 Name :</span>
+                    <input id="name" type="text" name="name2" placeholder="Name" required/>
+                </label>
+
+
+                <label>
+                    <span>Player-2 Email :</span>
+                    <input id="email" type="email" name="email2" placeholder="Email Address" required/>
+                </label>
+
+
+                <label>
+                    <span>Player-2 Phone :</span>
+                    <input id="phone" type="tel" name="phone2" placeholder="Phone" required maxlength="10"/>
+                </label><label>
+                    <span>Player-3 Name :</span>
+                    <input id="name" type="text" name="name3" placeholder="Name" required/>
+                </label>
+
+
+                <label>
+                    <span>Player-3 Email :</span>
+                    <input id="email" type="email" name="email3" placeholder="Email Address" required/>
+                </label>
+
+
+                <label>
+                    <span>Player-3 Phone :</span>
+                    <input id="phone" type="tel" name="phone3" placeholder="Phone" required maxlength="10"/>
+                </label><label>
+                    <span>Player-4 Name :</span>
+                    <input id="name" type="text" name="name4" placeholder="Name" required />
+                </label>
+
+
+                <label>
+                    <span>Player-4 Email :</span>
+                    <input id="email" type="email" name="email4" placeholder="Email Address" required />
+                </label>
+
+
+                <label>
+                    <span>Player-4 Phone :</span>
+                    <input id="phone" type="tel" name="phone4" placeholder="Phone" required maxlength="10"/>
+                </label><label>
+                    <span>Player-5 Name :</span>
+                    <input id="name" type="text" name="name5" placeholder="Name"  required/>
+                </label>
+
+
+                <label>
+                    <span>Player-5 Email :</span>
+                    <input id="email" type="email" name="email5" placeholder="Email Address" required />
+                </label>
+
+
+                <label>
+                    <span>Player-5 Phone :</span>
+                    <input id="phone" type="tel" name="phone5" placeholder="Phone" required maxlength="10" />
+                </label><label>
+                    <span>Player-6 Name :</span>
+                    <input id="name" type="text" name="name6" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-6 Email :</span>
+                    <input id="email" type="email" name="email6" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-6 Phone :</span>
+                    <input id="phone" type="tel" name="phone6" placeholder="Phone" />
+                </label><label>
+                    <span>Player-7 Name :</span>
+                    <input id="name" type="text" name="name7" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-7 Email :</span>
+                    <input id="email" type="email" name="email7" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-7 Phone :</span>
+                    <input id="phone" type="tel" name="phone7" placeholder="Phone" />
+                </label>
+
+                <label>
+                    <span>Player-8 Name :</span>
+                    <input id="name" type="text" name="name8" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-8 Email :</span>
+                    <input id="email" type="email" name="email8" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-8 Phone :</span>
+                    <input id="phone" type="tel" name="phone8" placeholder="Phone" />
+                </label>
+
+                <label>
+                    <span>Player-9 Name :</span>
+                    <input id="name" type="text" name="name9" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-9 Email :</span>
+                    <input id="email" type="email" name="email9" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-9 Phone :</span>
+                    <input id="phone" type="tel" name="phone9" placeholder="Phone" />
+                </label>
+                <label>
+                    <span>Player-10 Name :</span>
+                    <input id="name" type="text" name="name10" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-10 Email :</span>
+                    <input id="email" type="email" name="email10" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-10 Phone :</span>
+                    <input id="phone" type="tel" name="phone10" placeholder="Phone" />
+                </label>
+                <label>
+                    <span>Player-11 Name :</span>
+                    <input id="name" type="text" name="name11" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-11 Email :</span>
+                    <input id="email" type="email" name="email11" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-11 Phone :</span>
+                    <input id="phone" type="tel" name="phone11" placeholder="Phone" />
+                </label>
+                <label>
+                    <span>Player-12 Name :</span>
+                    <input id="name" type="text" name="name12" placeholder="Name" />
+                </label>
+
+
+                <label>
+                    <span>Player-12 Email :</span>
+                    <input id="email" type="email" name="email12" placeholder="Email Address" />
+                </label>
+
+
+                <label>
+                    <span>Player-12 Phone :</span>
+                    <input id="phone" type="tel" name="phone12" placeholder="Phone" />
+                </label>
+
+
+                 <label>
+{#                     <div class="submit-btn">#}
+                    <span>&nbsp;</span>
+                    <input type="submit" class="button" value="Submit" />
+{#                     </div>#}
+                </label>
+                {% csrf_token %}
+            </form>
+            <div class="row">
+                <p class="dev" style="font-size: 15px; margin-top:30px; color: white">&copy; Developed by Ridhwik Kalgaonkar, Ritesh Badaan and Rajwardhan Sinha</p>
+            </div>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{% static "js/particles.js" %}"></script>
+    <script src="{% static "js/app.js" %}"></script>
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/script_infopage.js" %}"></script>
+</html>

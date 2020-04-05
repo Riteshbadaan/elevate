@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/grid.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/style_infopage.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/queries1.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/popup.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/dropdown.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/ionicons.min.css" %}">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static "css/fontAwesome.css" %}">
+        <title>Elevate '20</title>
+              <script type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+    </script>
+    </head>
+    <body onload="showalert({{ f }})" onpageshow="if (event.persisted) noBack();" onunload="">
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <header class="js--top">
+            <nav>
+                <div class="row">
+                    <a href="https://pict.edu" target="_blank"><img src="{% static "images/pict.png" %}" alt="Logo" class="logo"></a>
+                    <img src="{% static "images/logo-white.png" %}" alt="Logo" class="logo-black">
+                    <ul class="main-nav1 js--main-nav">
+                        <li><a class="navbar" href="{% url 'intro' %}">Home</a></li>
+                        <li><a class="navbar js--scroll-to-top">Basketball</a></li>
+                        <li><a class="navbar js--scroll-to-about">Volleyball</a></li>
+                        <li><a class="navbar js--scroll-to-sponsors">Cricket</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-android-menu"></i></a>
+                </div>
+            </nav>
+                <div class="row">
+                    <h2>Basketball</h2>
+                    <p class="event-text"><b>Rules and Regulations:</b><br>
+                    1. The matches will be played on league basis.<br>
+                    2. Each player must carry college ID card and current year fees receipt.<br>
+                    3. All matches will be played according to FIBA rules.<br><br>
+                        <b>Registration:</b><br>
+                    Boys: &#8377 1500<br>
+                    Girls: &#8377 1200<br><br>
+                        <b>Prize Money:</b><br>
+                    Winner - Boys: &#8377 15000<br>
+                    Runner Up - Boys: &#8377 10000<br>
+                    Winner - Girls: &#8377 8000<br>
+                    Runner Up - Girls: &#8377 5000<br>
+                    </p>
+                </div>
+                <div class="btn1">
+                    <a class="btn-ghost js--scroll-to-log">Register</a>
+                </div>
+
+        </header>
+{#        <div id="login">#}
+
+{#                        </div>#}
+        <section class="events js--events">
+            <div class="row">
+                <h2>VOLLEYBALL</h2>
+                <p class="event-text">
+                    <b>Rules and Regulations:</b><br>
+                    1. The matches will be played on league basis. <br>
+                    2. Each player must carry college ID card, current year fee receipt and bonafide signed and
+                    stamped by principal on college letter head with player's photo on it. <br>
+                    3. There will be 3 sets, i.e. – 25-25-15 <br>
+                    4. Team should consist of 12 players. <br>
+                    5. All other rules followed for the game are according to recent standardized rules by FIVB. <br>
+                    6. All rights reserved to organizers and referees in case of any dispute. <br><br>
+                    <b>Registration:</b><br>
+                    Boys: &#8377 1800<br>
+                    Girls: &#8377 1200<br><br>
+                        <b>Prize Money:</b><br>
+                    Winner - Boys: &#8377 18000<br>
+                    Runner Up - Boys: &#8377 12000<br>
+                    Winner - Girls: &#8377 10000<br>
+                    Runner Up - Girls: &#8377 6000<br>
+                </p>
+            </div>
+            <div class="btn1">
+                <a class="btn-ghost js--scroll-to-log">Register</a>
+            </div>
+        </section>
+
+        <section class="sponsors js--sponsors">
+            <div class="row">
+                <h2>Cricket</h2>
+                <p class="event-text">
+                    <b>Rules and Regulations:</b><br>
+                    1. The player should be a student of an engineering college.<br>
+                    2. Umpire’s decision is final and mandatory for all.<br>
+                    3. Participant should be born after 1 Jan 1993 (below 18 years of age not allowed).<br>
+                    4. Students with current year drop are not eligible.<br>
+                    5. The participants must bring the following documents:<br>
+                    • Valid Original college ID card(with college stamp on it)<br>
+                    • Bonafide signed and stamped by principal on college letter head with player’s
+                    photo on it.<br>
+                    • Fee receipt of current academic year.[In case objection is raised three national
+                    ID’s and previous semester/year mark sheet will be required.]<br>
+                    6. Document verification is last step for confirmation of registration of team/player.<br>
+                    7. Any fault in the document verification leads to disqualification of team/player.<br>
+                    8. Each team will get the match ball from PICT.<br>
+                    9. Each innings will be of 20 overs.<br>
+                    10. Team list of 16 must submitted during registration.<br>
+                    11. Whites are compulsory for every match.<br>
+                    12. In case of a tie, the winner will be decided on wickets fallen. If further there is a
+                    tie, then the winner will be decided on the basis of a bowl out.<br><br>
+                    <b>Registration:</b><br>
+                    Boys: &#8377 7500<br><br>
+                        <b>Prize Money:</b><br>
+                    Winner: &#8377 20000<br>
+                    Runner Up: &#8377 15000<br>
+                </p>
+            </div>
+            <div class="btn1">
+                <a class="btn-ghost js--scroll-to-log">Register</a>
+            </div>
+        </section>
+
+        <div class="log js--log">
+            <div class="row">
+                <div class="col span-1-of-2 loginform">
+
+      <form class="form" method="post">
+
+                                <p style="color: #696969;font-size: 200%;font-weight: bold;font-family: 'Lato', 'Arial', sans-serif;">Sign-in</p>
+                                <p class="fieldset">
+                                    <label class="image-replace email" for="signin-email">E-mail</label>
+                                    <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail" name="log-email" required>
+{#                                    <span class="error-message">An account with this email address does not exist!</span>#}
+                                </p>
+                                <p class="fieldset">
+                                    <label class="image-replace password" for="signin-password">Password</label>
+                                    <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password" name="log-password" required>
+                                    <a  class="hide-password">Show</a>
+{#                                    <span class="error-message">Wrong password! Try again.</span>#}
+                                </p>
+                                <div class="container1">
+                                    <p class="fieldset">
+                                        <div class="custom-select" style="width:100%;">
+                                            <select name="drop">
+                                              <option value="0">Select Sport:</option>
+                                              <option value="BasketBall-Man" selected>Basketball-Men</option>
+                                              <option value="Basketball-Women">Basketball-Women</option>
+                                              <option value="Volleyball-Men">Volleyball-Men</option>
+                                              <option value="Volleyball-Women">Volleyball-Women</option>
+                                              <option value="Cricket">Cricket</option>
+                                            </select>
+                                        </div>
+                                    </p>
+                                </div>
+                                <p class="fieldset">
+                                    <input class="full-width" type="submit" value="Login" name="login">
+                                </p>
+                                {% csrf_token %}
+                            </form></div>
+{#                        </div>#}
+{#                 <div id="signup">#}
+        <div class="col span-1-of-2 signupform">
+        <form class="form" method="post">
+
+                                 <p style="color: #696969;font-size: 200%;font-weight: bold;font-family: 'Lato', 'Arial', sans-serif;">Sign-up</p>
+                                <p class="fieldset">
+                                    <label class="image-replace username" for="signup-username">Phone</label>
+                                    <input class="full-width has-padding has-border" id="signup-username" type="tel" placeholder="Phone" name="reg-phone" maxlength="10" required>
+{#                                    <span class="error-message">Your username can only contain numeric symbols!</span>#}
+                                </p>
+                                <p class="fieldset">
+                                    <label class="image-replace email" for="signup-email">E-mail</label>
+                                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail" name="reg-email" required>
+{#                                    <span class="error-message">Enter a valid email address!</span>#}
+                                </p>
+                                <p class="fieldset">
+                                    <label class="image-replace password" for="signup-password">Password</label>
+                                    <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password" name="reg-password" required>
+                                    <a href="#0" class="hide-password">Show</a>
+                                    <span class="error-message">Your password has to be at least 6 characters long!</span>
+                                </p>
+                                <p class="fieldset">
+                                    <input class="full-width has-padding" type="submit" value="Create account" name="register">
+                                </p>
+                                {% csrf_token %}
+                            </form></div>
+
+                </div>
+            <div class="row">
+                <p class="dev" style="font-size: 15px; margin-bottom:10px; color: black">&copy; Developed by Ridhwik Kalgaonkar, Ritesh Badaan and Rajwardhan Sinha</p>
+            </div>
+            </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/script_infopage.js" %}"></script>
+    <script src="{% static "js/popup.js" %}"></script>
+        <script>
+        function showalert(value){
+            if(value===1){
+                alert("New user registered! You can sign in now")
+            }
+            else if(value===2)
+            {
+                alert("Already Registered! Please Sign in.")
+            }
+            else if(value==3) {
+                alert("Invalid Credentials")
+            }
+            else if(value==4)
+            {
+                alert("Another User is already using that E-mail")
+            }
+        }
+        </script>
+    <script>
+        var x, i, j, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        for (i = 0; i < x.length; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          /*for each element, create a new DIV that will act as the selected item:*/
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          /*for each element, create a new DIV that will contain the option list:*/
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < selElmnt.length; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    for (k = 0; k < y.length; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              /*when the select box is clicked, close any other select boxes,
+              and open/close the current select box:*/
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          /*a function that will close all select boxes in the document,
+          except the current select box:*/
+          var x, y, i, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+        </script>
+</html>

@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1200px) {
+    .tagline {
+        text-align: center;
+    }
+    .spons {
+        width: 150px;
+    }
+    .row { padding: 0 2%; }
+}
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .thing { margin: auto 10px; }
+    h2 { margin-top: 40px; }
+    .event-text {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .container .card .face {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    .spons { height: 140px; }
+    .row { padding: 0 4%; }
+    .main-nav { 
+        float: left;
+        margin-top: 30px;
+        padding: 10px 0; 
+        display: none;
+    }
+    .spons h3 {
+        font-size: 120%;
+    }
+    .main-nav li { display: block; }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+    }
+    .sticky .main-nav {
+        margin-top: 0px;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    } 
+    .sticky .mobile-nav-icon {
+        margin-top: 0px;
+        padding-top: 10px;
+    }   
+    .tagline { font-size: 120%; }
+    h1 { font-size: 350%; }
+    h2 { font-size: 300%; }
+    .event-text {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .mobile-nav-icon { display: inline-block; }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo { height: 100px; }
+    .pict { margin-top: 100px; }
+    .location iframe {
+        height: 350px;
+    }
+    .btn-ghost {
+        margin-top: 10px;
+    }
+    .col { 
+        margin: 0 0 4% 0; 
+        width: 100%;
+    }
+    .container .card .face {
+        width: 100%;
+    }
+    .btn {
+        width: 250px;
+    }
+    h1 { font-size: 250%; }
+    h2 {
+        font-size: 200%;
+        margin-top: 50px;
+    }
+    .main-nav {
+        margin-left: 70px;
+        margin-top: 20px;
+        z-index: 9999;
+    }
+    .sticky .main-nav {
+        margin-left: 120px;
+    }
+    .location p {
+        font-size: 100%;
+    }
+    h2:after {
+        margin-top: 20px;
+    }
+    .spons {
+        width: 200px;
+        height: auto;
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/grid.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/queries.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/ionicons.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/animate.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/slick-theme.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/slick.css" %}">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static "css/fontAwesome.css" %}">
+        <title>Elevate '20</title>
+    </head>
+    <body>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <header class="js--top">
+            <div id="particles-js"></div>
+            <nav>
+                <div class="row">
+                    <a href="https://pict.edu" target="_blank"><img src="{% static "images/pict.png" %}" alt="Logo" class="logo"></a>
+                    <img src="{% static "images/logo-white.png" %}" alt="Logo" class="logo-black">
+                    <ul class="main-nav js--main-nav">
+                        <li><a class="js--scroll-to-top" href="#">Home</a></li>
+                        <li><a class="js--scroll-to-sponsors" href="#">Partners</a></li>
+                        <li><a class="js--scroll-to-gallery" href="#">Gallery</a></li>
+                        <li><a class="js--scroll-to-contact" href="#">Contact Us</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-android-menu"></i></a>
+                </div>
+            </nav>
+            <div class="main-title">
+                <div class="row">
+                    <img src="{% static "images/logo-white.png" %}" class="pict">
+                    <h1>Elevate '20</h1>
+                    <p class="tagline">An Inter-Corporate and Inter-Collegiate Sports Tournament</p>
+                    <p class="dates">15th February to 23rd February</p>
+                    <div class="btn1">
+                        <a class="btn btn-full js--scroll-to-about" href="#">More Info</a>
+{#                        <form method="post">#}
+                        <a class="btn btn-ghost" href="{% url 'register' %}">Register Now</a>
+{#                            </form>#}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="events js--events">
+            <div class="row">
+                <h2>ABOUT ELEVATE</h2>
+                <p class="event-text js--wp-1">Elevate began its inter-corporate chapter in the year 2014 and since
+                    then it has been one of the most sought-after sports events in the
+                    city. As the event is distributed over two weekends, it gives teams
+                    the exact sports getaway they look forward to for catering to their
+                    sports fanaticism.<br> Once a sportsman, always a sportsman. This probably came up
+                    because of a common phenomenon all sportsman share, that is-
+                    ‘The Runners High’- with a spike in the amount of endorphins in
+                    the blood, every player who has been playing a certain sport for
+                    more than 3 years has eventually found a way to push his or her
+                    limits. The sportsman spirit is thus born.
+                </p>
+            </div>
+            <div class="row icons">
+                <div class="col span-1-of-3 box">
+                    <div class="container">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="{% static "images/basketball.png" %}">
+                                    <h3>Basketball</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p id="bo">Registration:</p>
+                                    <p>Boys: &#8377 1500</p>
+                                    <p>Girls: &#8377 1200</p>
+                                    <p id="bo">Prize Money</p>
+                                    <p>Winner - Boys: &#8377 15000</p>
+                                    <p>Winner - Girls: &#8377 8000</p>
+                                    <a href="{% url 'register' %}">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="container">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="{% static "images/volleyball.png" %}">
+                                    <h3>Volleyball</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p id="bo">Registration:</p>
+                                    <p>Boys: &#8377 1800</p>
+                                    <p>Girls: &#8377 1200</p>
+                                    <p id="bo">Prize Money</p>
+                                    <p>Winner - Boys: &#8377 18000</p>
+                                    <p>Winner - Girls: &#8377 10000</p>
+                                    <a href="{% url 'register' %}">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <div class="container">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="{% static "images/cricket-bat.png" %}">
+                                    <h3>Cricket</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p id="bo">Registration:</p>
+                                    <p>Boys: &#8377 7500</p>
+                                    <p id="bo">Prize Money</p>
+                                    <p>Winner: &#8377 20000</p>
+                                    <p>Runner Up: &#8377 15000</p>
+                                    <a href="{% url 'register' %}">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors js--sponsors">
+            <div class="row">
+                <h2>OUR PARTNERS</h2>
+                <div class="row">
+                    <div class="col span-3-of-3">
+                        <h3>Basketball Powered By</h3>
+                        <a href="https://www.rajmudragroup.com/index.php/companies/logistics/rajmudra-logistics" target="_blank"><img class="spons raj" src="{% static "images/Rajmudra.png" %}"></a>
+                        <h3>Logistics<br>Partner</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <a href="https://www.budhanibros.com" target="_blank"><img class="spons" src="{% static "images/budhani.png" %} "></a>
+                        <h3>Snacks<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="https://www.campustimespune.com/" target="_blank"><img class="spons" src="{% static "images/campus.png" %}"></a>
+                        <h3>Online Media<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="https://ufofriesandcorn.com/" target="_blank"> <img class="spons" src="{% static "images/ufo.png" %}"></a>
+                        <h3>Food<br>Partner</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <a href="https://www.nestle.in/" target="_blank"><img class="spons" src="{% static "images/nestle.png" %}"></a>
+                        <h3>Refreshment<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="https://theframedwall.com/" target="_blank"><img class="spons" src="{% static "images/tfw.png" %}"></a>
+                        <h3>Merchandise<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="https://www.justdial.com/Pune/Kalindi-Offset-Appa-Balwant-Chowk-Shaniwar-Peth/020PXX20-XX20-090911141647-K3P7_BZDET" target="_blank"><img class="spons" src="{% static "images/kalindi.png" %}"></a>
+                        <h3>Visibility<br>Partner</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <a href="https://www.fitternity.com/" target="_blank"> <img class="spons" src="{% static "images/fitternity.png" %}"></a>
+                        <h3>Fitness<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="https://www.sakaltimes.com/home" target="_blank"><img class="spons" src="{% static "images/sakal.png" %}"></a>
+                        <h3>Offline Print<br>Partner</h3>
+                    </div>
+                    <div class="col span-1-of-3">
+                        <a href="http://www.paperboatdrinks.com/" target="_blank"><img class="spons" src="{% static "images/pb.png" %}"></a>
+                        <h3>Beverage<br>Partner</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery js--gallery">
+            <div class="row">
+                <h2>Gallery</h2>
+                <div class="thing">
+                    <div><img src="{% static "images/1.jpg" %}"></div>
+                    <div><img src="{% static "images/2.jpg" %}"></div>
+                    <div><img src="{% static "images/3.jpg" %}"></div>
+                    <div><img src="{% static "images/4.jpg" %}"></div>
+                    <div><img src="{% static "images/5.jpg" %}"></div>
+                    <div><img src="{% static "images/6.jpg" %}"></div>
+                    <div><img src="{% static "images/7.jpg" %}"></div>
+                </div>
+            </div>
+        </section>
+        <section class="location js--contact">
+            <div class="row">
+                <h2>Contact Us</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.57607754138!2d73.84864491537903!3d18.457547175914854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1580921619920!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <p><a><i class="ion-android-call"></i> Prasad Malwadkar: +91 84858 10672 </a></p>
+                <p><a href="mailto:corporateelevate20@gmail.com"><i class="ion-android-drafts"></i> corporateelevate20@gmail.com </a></p>
+                <p><a href="https://www.facebook.com/pictelevate" target="_blank"><i class="ion-social-facebook"></i> Elevate '20</a></p>
+                <p><a href="https://www.instagram.com/elevate_2k20" target="_blank"><i class="ion-social-instagram"></i> Elevate '20</a></p>
+                <p class="dev" style="font-size: 15px; margin-bottom: -15px;">&copy; Developed by Ridhwik Kalgaonkar, Ritesh Badaan and Rajwardhan Sinha</p>
+            </div>
+        </section>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static "js/slick.js" %}"></script>
+    <script src="{% static "js/particles.js" %}"></script>
+    <script src="{% static "js/app.js" %}"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+    <script src="{% static "js/script.js" %}"></script>
+</html>
